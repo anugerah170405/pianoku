@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&family=Nunito:wght@400;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&family=DM+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --font-mono: 'DM Mono', ui-monospace, monospace;
+  --color-paper: #f5f4f0;
+  --color-ink: #0b0b0b;
+}
+
+@layer base {
+  html { background: var(--color-paper); color: var(--color-ink); }
+  html.dark { background: #0b0b0b; color: #ededeb; }
+  body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+  ::selection { background: #0b0b0b; color: #f5f4f0; }
+  .dark ::selection { background: #ededeb; color: #0b0b0b; }
+  h1, h2, h3 { font-style: italic; letter-spacing: -0.03em; }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-serif);
+}
