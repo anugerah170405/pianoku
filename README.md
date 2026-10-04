@@ -8,7 +8,7 @@ A minimalist web piano for playing notes, learning simple songs, and exploring s
 
 Pianoku is a responsive web piano built with React and TypeScript.
 
-You can play the piano using your mouse choose built-in sheet music, and play songs directly from the piano interface.
+You can play the piano using your mousen choose built-in sheet music, and play songs directly from the piano interface.
 
 The project focuses on a simple, clean, and enjoyable experience for playing and practicing piano.
 
